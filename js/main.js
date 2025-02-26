@@ -34,11 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
 //Sliders
 $(document).ready(function () {
   $(".slider").owlCarousel({
-    loop: true,
+    loop: false,
     autoplay: true,
     margin: 10,
     nav: false,
     dots: true,
+    mouseDrag: true,
+    touchDrag: true,
     responsive: {
       0: {
         items: 1,
@@ -83,3 +85,31 @@ $(function () {
         jQuery("#header").removeClass("fixed");
     }
 });
+
+//Cambio de idioma
+const langButtons = document.querySelectorAll("[data-language]");
+const textsToChange = document.querySelectorAll("[data-section]");
+
+
+
+
+langButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+      fetch(`../languages/${button.dataset.language}.json`)
+          .then(res => res.json())
+          .then(data => {
+              textsToChange.forEach((el) => {
+                  const section = el.dataset.section;
+                  const value = el.dataset.value;
+
+                  el.innerHTML = data[section][value];
+              });
+
+              // Remover la clase 'btnActive' de todos los botones
+              langButtons.forEach(btn => btn.classList.remove("btnActive"));
+              // Agregar la clase 'btnActive' al botón clicado
+              button.classList.add("btnActive");
+          });
+  });
+});
+

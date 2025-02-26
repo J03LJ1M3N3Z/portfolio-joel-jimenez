@@ -18,11 +18,7 @@
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='630' />
 
-    <!-- Twitter Cards -->
-    <!-- <meta property='twitter:creator' content='' />
-    <meta property='twitter:url' content='https://www.yachtvibes.com' />
-    <meta property='twitter:card' content='summary_large_image' />
-    <meta property='twitter:site' content='' /> -->
+
 
     <!-- Twitter Cards description  -->
     <meta property='twitter:title' content='Joel Jiménez - Portfolio' />
@@ -46,7 +42,7 @@
 
 </head>
 
-<body>
+<body> 
 
     <div class='container-fluid noPadding py-5'>
         <!-- Content -->
@@ -54,10 +50,13 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-9 col-xxl-8">
                     <div class="d-flex flex-wrap justify-content-between align-items-center">
-                        <p>
-                            <a class="cta" href="" data-leguage="en">English</a> / 
-                            <a class="cta" href="" data-leguage="es">Español</a>
-                        </p>
+                        <div class="content-languages mb-4 mb-sm-0">
+                        <button class="btnActive" href="" data-section="header" data-value="idiom-two"
+                            data-language="en">English</button>
+                        <button class="mx-3" href="" data-section="header" data-value="idiom-one"
+                            data-language="es">Spanish</button>
+                        </div>
+
                         <div class="d-flex">
                             <button class="mode btnActive"> <i class="fa-solid fa-sun"></i> </button>
                             <button class="mode mx-3"><i class="fa-solid fa-moon"></i></button>
@@ -75,12 +74,13 @@
                 <div class="col-12 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 shadow p-3 p-md-5">
                     <div class="row align-items-center">
                         <div class="col-12 col-lg-6">
-                            <h1>Joel Jiménez</h1>
+                            <h1 data-section="aboutMe" data-value="name">Joel Jiménez</h1>
                             <h2>Web & UX/UI Designer </h2>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <p class="small">About me</p>
-                            <p class="mt-2">Experienced web designer and developer with high skills in UX/UI, always
+                            <p class="small" data-section="aboutMe" data-value="title">About me</p>
+                            <p class="mt-2" data-section="aboutMe" data-value="description">Experienced web designer and
+                                developer with high skills in UX/UI, always
                                 proposing
                                 innovative solutions and focused on attention to detail so that the user has a good
                                 experience when interacting with any digital application.</p>
@@ -101,46 +101,72 @@
                 <div class="col-12 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 noPadding mt-4">
                     <div class="d-flex flex-wrap justify-content-lg-between align-items-stretch">
                         <div class="shadow p-3 p-md-5 sizeWidth align-content-around">
-                            <p class="small">Experience</p>
+                            <p class="small" data-section="experience" data-value="title">Experience</p>
                             <div class="mt-3">
-                                <p><b>01-2023 - Actually <br> Frontend Team Orange Digital CX</b></p>
-                                <p>Salesforce Marketing Cloud Frontend / UI Designer</p>
+                                <p data-section="experience" data-value="first-job-date" class="bold">01-2023 - Actually
+                                </p>
+                                <p data-section="experience" data-value="first-job-company" class="bold">Frontend Team
+                                    Orange Digital CX</p>
+                                <p data-section="experience" data-value="first-job-role">Salesforce Marketing Cloud
+                                    Frontend / UI Designer</p>
                             </div>
                             <div class="mt-4">
-                                <p><b>03-2022 - 01-2023 <br> Marketing Department VIVRI</b></p>
-                                <p>Web Designer / UI Designer / Frontend</p>
+                                <p data-section="experience" data-value="second-job-date" class="bold">03-2022 - 01-2023
+                                </p>
+                                <p data-section="experience" data-value="second-job-company" class="bold">Marketing
+                                    Department VIVRI</p>
+                                <p data-section="experience" data-value="second-job-role">Web Designer / UI Designer /
+                                    Frontend</p>
                             </div>
                             <div class="mt-4">
-                                <p><b>06-2021 - 03-2022 <br> Marketing Agency Web Castell</b></p>
-                                <p>Web Designer / UI Designer / Frontend </p>
+                                <p data-section="experience" data-value="third-job-date" class="bold">06-2021 - 03-2022
+                                </p>
+                                <p data-section="experience" data-value="third-job-company" class="bold">Marketing
+                                    Agency Web Castell</p>
+                                <p data-section="experience" data-value="third-job-role">Web Designer / UI Designer /
+                                    Frontend </p>
                             </div>
 
                             <div class="mt-4">
-                                <p><b>02-2018 - 03-2020 <br> Marketing Agency Merkategia</b></p>
-                                <p>Web Designer / Frontend</p>
+                                <p data-section="experience" data-value="fourth-job-date" class="bold">02-2018 - 03-2020
+                                </p>
+                                <p data-section="experience" data-value="fourth-job-company" class="bold">Marketing
+                                    Agency Merkategia</p>
+                                <p data-section="experience" data-value="fourth-job-role">Web Designer / Frontend</p>
                             </div>
                         </div>
                         <div class="sizeWidth">
                             <div class="shadow p-3 p-md-5 mt-4 mt-lg-0">
-                                <p class="small">Education</p>
+                                <p class="small" data-section="education" data-value="title">Education</p>
                                 <div class="mt-3">
-                                    <p><b>2012 - 2016 <br> Guadalajara University</b></p>
-                                    <p>Information Systems Bachelor Degree</p>
+                                    <p data-section="education" data-value="first-degree-date" class="bold">2012 - 2016
+                                    </p>
+                                    <p data-section="education" data-value="first-degree-university" class="bold">
+                                        Guadalajara University</p>
+                                    <p data-section="education" data-value="first-degree-title">Information Systems
+                                        Bachelor Degree</p>
                                 </div>
                                 <div class="mt-4">
-                                    <p><b>2006 - 2010 <br> Industrial Technical Education Center</b></p>
-                                    <p>Computer and Computing Technologist</p>
+                                    <p data-section="education" data-value="second-degree-date" class="bold">2006 - 2010
+                                    </p>
+                                    <p data-section="education" data-value="second-degree-university" class="bold">
+                                        Industrial Technical Education Center</p>
+                                    <p data-section="education" data-value="second-degree-title">Computer and Computing
+                                        Technologist</p>
                                 </div>
                             </div>
                             <div class="shadow p-3 p-md-5 mt-4">
-                                <p class="small">Lenguage</p>
-                                <div class="mt-3">
-                                    <p><b>Level B1-B2</b> Talking and Writing</p>
+                                <p data-section="lenguages" data-value="title" class="small">Lenguage</p>
+                                <div class="mt-2">
+                                    <p data-section="lenguages" data-value="idiom" class="bold">Level B1-B2 Talking and
+                                        Writing</p>
                                 </div>
                                 <div class="mt-4">
-                                    <p class="small">Recent Courses</p>
-                                    <div class="mt-3">
-                                        <p><b>April 2024</b> UX/UI Course</p>
+                                    <p data-section="certificactions" data-value="title" class="small">Recent Courses
+                                    </p>
+                                    <div class="mt-2">
+                                        <p data-section="certificactions" data-value="course-1" class="bold"> April 2024
+                                            UX/UI Course</p>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +176,8 @@
 
                 <!-- SKILLS DESIGN -->
                 <div class="col-12 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 noPadding mt-5">
-                    <p class="small px-3 px-md-5">Design & Prototyping skilss</p>
+                    <p data-section="desingSkills" data-value="title" class="small px-3 px-md-5">Design & Prototyping
+                        skilss</p>
                     <div class="d-flex flex-wrap align-items-center justify-content-start">
                         <!-- ILLUSTRATOR -->
                         <div class="skill shadow py-2 px-3 mt-3 mx-2 mx-md-4">
@@ -158,7 +185,8 @@
                                 <img loading="lazy" width="70" height="70" src="./img/illustrator.png" alt="Illustrator"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>Illustrator</b> <br> Vectorial design</p>
+                                    <p data-section="desingSkills" data-value="skill-1" class="bold">Illustrator</p>
+                                    <p data-section="desingSkills" data-value="skill-1-description">Vectorial design</p>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +196,8 @@
                                 <img loading="lazy" width="70" height="70" src="./img/photoshop.png" alt="Photoshop"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>Photoshop</b> <br> Image editing</p>
+                                    <p data-section="desingSkills" data-value="skill-2" class="bold">Photoshop</p>
+                                    <p data-section="desingSkills" data-value="skill-2-description">Image editing</p>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +207,8 @@
                                 <img loading="lazy" width="70" height="70" src="./img/afterEffects.png"
                                     alt="After Effects" class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>After Effects</b> <br> Motion Design</p>
+                                    <p data-section="desingSkills" data-value="skill-3" class="bold">After Effects</p>
+                                    <p data-section="desingSkills" data-value="skill-3-description">Motion Design</p>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +218,9 @@
                                 <img loading="lazy" width="70" height="70" src="./img/figma.png" alt="Figma"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>Figma</b> <br> Design Systems & Interfaces</p>
+                                    <p data-section="desingSkills" data-value="skill-4" class="bold">Figma</p>
+                                    <p data-section="desingSkills" data-value="skill-4-description">Design Systems &
+                                        Interfaces</p>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +230,8 @@
 
                 <!-- SKILLS DEVELOPMENT -->
                 <div class="col-12 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 noPadding mt-5">
-                    <p class="small px-3 px-md-5">Development Skills</p>
+                    <p data-section="developmentSkills" data-value="title" class="small px-3 px-md-5">Development Skills
+                    </p>
                     <div class="d-flex flex-wrap align-items-center justify-content-start">
                         <!-- HTML - BOOTSTRATP - JAVASCRIPT -->
                         <div class="skill shadow py-2 px-3 mt-4 mx-2 mx-md-4">
@@ -210,7 +243,10 @@
                                 <img loading="lazy" width="70" height="70" src="./img/javaAcript.png" alt="JavaScript"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>HTML & Bootstrap</b> <br> Layout interfaces, Interaction and Animation</p>
+                                    <p data-section="developmentSkills" data-value="skill-1" class="bold">HTML,
+                                        Bootstrap & JavaScript</p>
+                                    <p data-section="developmentSkills" data-value="skill-1-description">Layout
+                                        interfaces, Interaction and Animation</p>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +258,10 @@
                                 <img loading="lazy" width="70" height="70" src="./img/sass.png" alt="SASS"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>CSS3 & SASS</b> <br> Design Interfaces and Animations</p>
+                                    <p data-section="developmentSkills" data-value="skill-2" class="bold">CSS3 & SASS
+                                    </p>
+                                    <p data-section="developmentSkills" data-value="skill-2-description">Design
+                                        Interfaces and Animations</p>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +273,10 @@
                                 <img loading="lazy" width="70" height="70" src="./img/php.png" alt="PHP"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>Wordpress & PHP</b> <br> Custom templates for websites</p>
+                                    <p data-section="developmentSkills" data-value="skill-3" class="bold">Wordpress &
+                                        PHP</p>
+                                    <p data-section="developmentSkills" data-value="skill-3-description">Custom
+                                        templates for websites</p>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +288,10 @@
                                 <img loading="lazy" width="70" height="70" src="./img/github.png" alt="GITHUB"
                                     class="img-fluid icono">
                                 <div class="text">
-                                    <p><b>Git & Github</b> <br> Project Versioning and Deployment</p>
+                                    <p data-section="developmentSkills" data-value="skill-4" class="bold">Git & Github
+                                    </p>
+                                    <p data-section="developmentSkills" data-value="skill-4-description">Project
+                                        Versioning and Deployment</p>
                                 </div>
                             </div>
                         </div>
@@ -258,7 +303,7 @@
                 <div class="col-12 col-sm-11 col-md-10 col-lg-10 col-xl-9 col-xxl-8 mt-5">
 
                     <div class="d-flex flex-wrap align-items-center justify-content-start justify-content-md-between">
-                        <p class="small px-3 px-md-5">Recent Projects</p>
+                        <p data-section="webProjects" data-value="title" class="small px-3 px-md-5">Recent Projects</p>
 
                         <div
                             class="group-projects ms-2 ms-md-4 my-3 my-lg-0 d-flex flex-wrap justify-content-start justify-content-lg-end">
@@ -277,8 +322,10 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Yellowschool</b></p>
-                                            <p>Development of a website for a english school, with a modern design and
+                                            <p data-section="webProjects" data-value="pWeb-1-name" class="bold">
+                                                Yellowschool</p>
+                                            <p data-section="webProjects" data-value="pWeb-1-description">Development of
+                                                a website for a english school, with a modern design and
                                                 easy to
                                                 navigate.</p>
                                             </p>
@@ -291,10 +338,11 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Prodesi</b></p>
-                                            <p>Development of a website for a company that offers services in the area
-                                                of
-                                                ​​design and construction. </p>
+                                            <p data-section="webProjects" data-value="pWeb-2-name" class="bold">Prodesi
+                                            </p>
+                                            <p data-section="webProjects" data-value="pWeb-2-description">Development of
+                                                a website for a company that offers services in the area
+                                                of ​​design and construction. </p>
                                             </p>
                                             <a target="_blank" href="https://prodesi.jazzydevstudio.com/"
                                                 class="cta mt-2">View
@@ -306,12 +354,13 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Atmporal</b></p>
-                                            <p>Development of a website for an entertainment event management company.
+                                            <p data-section="webProjects" data-value="pWeb-3-name" class="bold">Atmporal
+                                            </p>
+                                            <p data-section="webProjects" data-value="pWeb-3-description">Development of
+                                                a website for an entertainment event management company.
                                             </p>
                                             </p>
-                                            <a target="_blank" href="https://atmporal-foro.jazzydevstudio.com/"
-                                                class="cta mt-2">Link
+                                            <a target="_blank" href="https://atmporal.com.mx/" class="cta mt-2">Link
                                                 project &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
@@ -320,8 +369,10 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Hidramarketing</b></p>
-                                            <p>Development of a website for a company that offers services in the area
+                                            <p data-section="webProjects" data-value="pWeb-4-name" class="bold">
+                                                Hidramarketing</p>
+                                            <p data-section="webProjects" data-value="pWeb-4-description">Development of
+                                                a website for a company that offers services in the area
                                                 of marketing. </p>
                                             </p>
                                             <a target="_blank" href="https://hidramarketing.com/" class="cta mt-2">Link
@@ -333,12 +384,29 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Agave Films</b></p>
-                                            <p>Development of a website for an independent film production company.</p>
+                                            <p data-section="webProjects" data-value="pWeb-5-name" class="bold">Agave
+                                                Films</p>
+                                            <p data-section="webProjects" data-value="pWeb-5-description">Development of
+                                                a website for an independent film production company.</p>
                                             </p>
                                             <a target="_blank" href="https://www.agavefilms.com.mx/"
                                                 class="cta mt-2">View project &nbsp;<i
                                                     class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item p-3">
+                                    <div class="shadow d-flex">
+                                        <div class="p-4 align-self-center">
+                                            <p data-section="webProjects" data-value="pWeb-6-name" class="bold">
+                                                Buskoppler</p>
+                                            <p data-section="webProjects" data-value="pWeb-6-description">Development of
+                                                a website for a company that offers services in the area
+                                                of indistry.</p>
+                                            </p>
+                                            <a target="_blank" href="https://buskoppler.com/" class="cta mt-2">View
+                                                project &nbsp;<i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -352,8 +420,9 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Oval</b></p>
-                                            <p>Design interface for a website that offers services in the area of
+                                            <p data-section="uiProjects" data-value="pUI-1-name" class="bold">Oval</p>
+                                            <p data-section="uiProjects" data-value="pUI-1-description">Design interface
+                                                for a website that offers services in the area of
                                                 health service.</p>
                                             </p>
                                             <a target="_blank"
@@ -366,10 +435,14 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Name UI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
+                                            <p data-section="uiProjects" data-value="pUI-2-name" class="bold">Atmporal
                                             </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
+                                            <p data-section="uiProjects" data-value="pUI-2-description">Design interface
+                                                for an entertainment event management company.
+                                            </p>
+                                            <a target="_blank"
+                                                href="https://www.figma.com/proto/L5f9rYt9SfjQsynTndOKi0/Atmporal?page-id=0%3A1&node-id=13-2&t=564SgSF6T8AhT2o3-1"
+                                                class="cta mt-2">Link project &nbsp;<i
                                                     class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
@@ -377,27 +450,19 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Name UI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
+                                            <p data-section="uiProjects" data-value="pUI-3-name" class="bold">Medical
+                                                Devices</p>
+                                            <p data-section="uiProjects" data-value="pUI-3-description">Protiype design
+                                                for a website that offers services in the area of
+                                                medical devices.</p>
                                             </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
+                                            <a target="_blank"
+                                                href="https://www.figma.com/proto/QiwnHMuneJdRuykE72t0G6/WeloveWeb?page-id=0%3A1&node-id=7-2&viewport=-1198%2C371%2C0.19&t=mUz1ZJYP6Y1v1S9s-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=7%3A2"
+                                                class="cta mt-2">Link project &nbsp;<i
                                                     class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item p-3">
-                                    <div class="shadow d-flex">
-                                        <div class="p-4 align-self-center">
-                                            <p><b>Name UI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
-                                            </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
                             </div>
                         </div>
 
@@ -407,49 +472,22 @@
                                 <div class="item p-3">
                                     <div class="shadow d-flex">
                                         <div class="p-4 align-self-center">
-                                            <p><b>Name UXUI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
-                                            </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item p-3">
-                                    <div class="shadow d-flex">
-                                        <div class="p-4 align-self-center">
-                                            <p><b>Name UXUI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
-                                            </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item p-3">
-                                    <div class="shadow d-flex">
-                                        <div class="p-4 align-self-center">
-                                            <p><b>Name UXUI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
-                                            </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item p-3">
-                                    <div class="shadow d-flex">
-                                        <div class="p-4 align-self-center">
-                                            <p><b>Name UXUI</b></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, alias!
-                                            </p>
-                                            <a target="_blank" href="" class="cta mt-2">Link project &nbsp;<i
+                                            <p data-section="uxProyjects" data-value="pUX-1-name" class="bold">SKILL
+                                                CAPITAL</p>
+                                            <p data-section="uxProyjects" data-value="pUX-1-description">Design and
+                                                prototyping of an application to find a special trainer to
+                                                train in a martial discipline.</p>
+                                            <a target="_blank"
+                                                href="https://www.figma.com/proto/CkNIknVb6Z8yO2hWOLOpNP/Prototipo?page-id=219%3A16691&node-id=251-9220&starting-point-node-id=251%3A8621&t=wfV9nhQzNhr2NZRN-1"
+                                                class="cta mt-2">Link project &nbsp;<i
                                                     class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                         <!-- GRAPHIC DESIGN -->
                         <!-- <div id="graphic" class="Tabcondent">
                             <div class="owl-carousel owl-theme slider">

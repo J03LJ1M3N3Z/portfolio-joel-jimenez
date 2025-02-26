@@ -1,0 +1,111 @@
+{
+
+    "header": {
+        "idiom-one": "Spanish",
+        "idiom-two": "English"
+    },
+
+    "aboutMe": {
+        "title": "About Me",
+        "name": "Joel Jiménez",	
+        "description": "Experienced web designer and developer with high skills in UX/UI, always proposing innovative solutions and focused on attention to detail so that the user has a good experience when interacting with any digital application."
+    },
+
+    "experience": {
+        "title": "Experience",
+        "first-job-date": "01-2023 - Actually",
+        "first-job-company": "Frontend Team Orange Digital CX",
+        "first-job-role": "Salesforce Marketing Cloud Frontend / UI Designer",
+
+        "second-job-date": "03-2022 - 01-2023",
+        "second-job-company": "Marketing Department VIVRI",
+        "second-job-role": " Web Designer / UI Designer / Frontend",
+
+        "third-job-date": "06-2021 - 03-2022",
+        "third-job-company": "Marketing Agency Web Castell.",
+        "third-job-role": "Web Designer / UI Designer / Frontend",
+
+        "fourth-job-date": "02-2018 - 03-2020",
+        "fourth-job-company": "Marketing Agency Merkategia.",
+        "fourth-job-role": "Web Designer / Frontend"
+        
+    },
+
+    "education": {
+        "title": "Education",
+        "first-degree-date": "2012 - 2016",
+        "first-degree-university": "Guadalajara University",
+        "first-degree-title": "Information Systems Bachelor Degree",
+
+        "second-degree-date": "2006 - 2010",
+        "second-degree-university": "Industrial Technical Education Center",
+        "second-degree-title": "Computer and Computing Technologist"
+
+    },
+
+    "lenguages": {
+        "title": "Languages",
+        "idiom": "Level B1-B2 Talking and Writing"
+    },
+
+    "certificactions": {
+        "title": "Recent Courses",
+        "course-1": "April 2024 UX/UI Course"
+    },
+
+    "desingSkills": {
+        "title": "Design & Prototyping skilss",
+        "skill-1": "Illustrator",
+        "skill-1-description": "Vectorial design",
+        "skill-2": "Photoshop",
+        "skill-2-description": "Image editing",
+        "skill-3": "After Effects",
+        "skill-3-description": "Motion Design",
+        "skill-4": "Figma",
+        "skill-4-description": "Design Systems & Interfaces"
+    },
+
+    "developmentSkills": {
+        "title": "Development Skills",
+        "skill-1": "HTML, Bootstrap & JavaScript",
+        "skill-1-description": "Layout interfaces, Interaction and Animation",
+        "skill-2": "CSS3 & SASS",
+        "skill-2-description": "Design Interfaces and Animations",
+        "skill-3": "Wordpress & PHP",
+        "skill-3-description": "Custom templates for websites",
+        "skill-4": "Git & Github",
+        "skill-4-description": "Project Versioning and Deployment"
+    },
+
+    "webProjects": {
+        "title": "Recent projects",
+        "pWeb-1-name": "Yellowschool",
+        "pWeb-1-description": "Development of a website for a english school, with a modern design and easy to navigate",
+        "pWeb-2-name": "Prodesi",
+        "pWeb-2-description": "Development of a website for a company that offers services in the area  of ​​design and construction.",
+        "pWeb-3-name": "Atmporal",
+        "pWeb-3-description": "Development of a website for an entertainment event management company",
+        "pWeb-4-name": "Hidramarketing",
+        "pWeb-4-description": "Development of a website for a company that offers services in the area of marketing. ",
+        "pWeb-5-name": "Agave Films",
+        "pWeb-5-description": "Development of a website for an independent film production company.",
+        "pWeb-6-name": "Buskoppler",
+        "pWeb-6-description": "Development of a website for a company that offers services in the area of indistry."
+        
+    },
+
+    "uiProjects": {
+        "pUI-1-name": "Oval",
+        "pUI-1-description": "Design interface for a website that offers services in the area of health service.",
+        "pUI-2-name": "Atmporal",
+        "pUI-2-description": "Design interface for an entertainment event management company",
+        "pUI-3-name": "Medical Devices",
+        "pUI-3-description": "Protiype design for a website that offers services in the area of medical devices."
+    },
+
+    "uxProyjects": {
+        "pUX-1-name": "SKILL CAPITAL",
+        "pUX-1-description": "Design and prototyping of an application to find a special trainer to train in a martial discipline."
+    }
+    
+}

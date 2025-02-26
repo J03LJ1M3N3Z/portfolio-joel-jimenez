@@ -1,44 +1,46 @@
 //Variables light mode
 
-:root{
+:root {
     --body: #E7E7E7;
     --text: #000;
     --label: #1332FE;
     --link: #6B11F4;
     --linkHover: #0ACF83;
     --bgButton: #E8E8E8;
-    --bgButtonActive:#6B11F4;
-    --iconButton:#6B11F4;
+    --bgButtonActive: #6B11F4;
+    --iconButton: #6B11F4;
     --iconButtonActive: #FFF;
-    --shadow: -11px -11px 22px rgba(255,255,255), 
-                11px 11px 22px rgba(128,128,128, .3);
+    --shadow: -11px -11px 22px rgba(255, 255, 255),
+        11px 11px 22px rgba(128, 128, 128, .3);
+    --shadowHover: -11px -11px 22px rgb(116, 77, 255, .2),
+        11px 11px 22px rgba(116, 77, 255, .2);
     --selectionBg: #6B11F4;
-    --selectionText:#fff;
-    --container:#E7E7E7;
-    --scrollBarTrack:#E7E7E7;
-    --scrollBarTumb:#6B11F4;
+    --selectionText: #fff;
+    --container: #E7E7E7;
+    --scrollBarTrack: #E7E7E7;
+    --scrollBarTumb: #6B11F4;
 
 }
 
 //Variables dark mode
 
-body.dark-theme{
+body.dark-theme {
     --body: #060b0d;
     --text: #fff;
     --label: #0ACF83;
     --link: #33A9DC;
     --linkHover: #E7E7E7;
     --bgButton: #0C1113;
-    --bgButtonActive:#0ACF83;
-    --iconButton:#0ACF83;
+    --bgButtonActive: #0acf83;
+    --iconButton: #0ACF83;
     --iconButtonActive: #111A1D;
-    --shadow: -11px -11px 22px rgba(0,0,0), 
-                11px 11px 22px rgba(16, 16, 16, 0.637);
+    --shadow: -11px -11px 22px rgba(0, 0, 0),
+        11px 11px 22px rgba(16, 16, 16, 0.637);
+    --shadowHover: -11px -11px 22px rgba(10, 207, 131, .2),
+        11px 11px 22px rgba(10, 207, 131, .2);
     --selectionBg: #0ACF83;
-    --selectionText:#000;
-    --container:#0e1518;
-    --scrollBarTrack:#0e1518;
-    --scrollBarTumb:#0ACF83;
+    --selectionText: #000;
+    --container: #0e1518;
+    --scrollBarTrack: #0e1518;
+    --scrollBarTumb: #0ACF83;
 }
-
-

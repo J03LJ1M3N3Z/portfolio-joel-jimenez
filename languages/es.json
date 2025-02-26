@@ -6,11 +6,13 @@
     },
 
     "aboutMe": {
+        "title": "Sobre mí",
         "name": "Joel Jiménez",	
         "description": "Diseñador y desarrollador web experimentado con altas habilidades en UX/UI, siempre proponiendo soluciones innovadoras y centrado en la atención al detalle para que el usuario tenga una buena experiencia al interactuar con cualquier aplicación digital."
     },
 
     "experience": {
+        "title": "Experience",
         "first-job-date": "01-2023 - Actualidad",
         "first-job-company": "Equipo de Frontend en Orange Digital CX",
         "first-job-role": "Salesforce Marketing Cloud Frontend / Diseñador UI",
@@ -30,9 +32,10 @@
     },
 
     "education": {
+        "title": "Educación",
         "first-degree-date": "2012 - 2016",
         "first-degree-university": "Universidad de Guadalajara",
-        "first-degree-title": "Licenciatura en Diseño y Desarrollo Web",
+        "first-degree-title": "Licenciatura en Sistemas de Información",
 
         "second-degree-date": "2006 - 2010",
         "second-degree-university": "Centro de Enseñanza Técnica Industrial",
@@ -41,14 +44,17 @@
     },
 
     "lenguages": {
+        "title": "Idiomas",
         "idiom": "Nivel B1-B2 Escrito y hablado"
     },
 
     "certificactions": {
+        "title": "Cursos y certificaciones",
         "course-1": "Abril 2024 Certificación de UX/UI "
     },
 
     "desingSkills": {
+        "title": "Habilidades de diseño y prototipado",
         "skill-1": "Illustrator",
         "skill-1-description": "Diseño vectorial",
         "skill-2": "Photoshop",
@@ -60,7 +66,8 @@
     },
 
     "developmentSkills": {
-        "skill-1": "HTML & Bootstrap",
+        "title": "Habilidades de desarrollo",
+        "skill-1": "HTML, Bootstrap & JavaScript",
         "skill-1-description": "Desarrollo de interfces web",
         "skill-2": "CSS3 & SASS",
         "skill-2-description": "Estilos de la web y animaciones",
@@ -68,6 +75,37 @@
         "skill-3-description": "Temas personalizados",
         "skill-4": "Git & Github",
         "skill-4-description": "Versionamiento y despliegue de proyectos"
+    },
+    "webProjects": {
+        "title": "Proyectos recientes",
+        "pWeb-1-name": "Yellowschool",
+        "pWeb-1-description": "Desarrollo de una página web para una escuela de inglés, con un diseño moderno y de fácil navegación",
+        "pWeb-2-name": "Prodesi",
+        "pWeb-2-description": " Desarrollo de una página web para una empresa de servicios de diseño y construcción de interiores.",
+        "pWeb-3-name": "Atmporal",
+        "pWeb-3-description": "Desarrollo de un sitio web para una empresa de gestión de eventos.",
+        "pWeb-4-name": "Hidramarketing",
+        "pWeb-4-description": "Desarrollo de un sitio web para una empresa de marketing digital.",
+        "pWeb-5-name": "Agave Films",
+        "pWeb-5-description": "Desarrollo de un sitio web para una empresa de producción de cine.",
+        "pWeb-6-name": "Buskoppler",
+        "pWeb-6-description": "Desarrollo de un sitio web para una empresa que ofrece servicios en el ámbito de la indistria."
+        
+    },
+
+    "uiProjects": {
+        "pUI-1-name": "Oval",
+        "pUI-1-description": "Diseño de la interfaz de un sitio web que ofrece servicios en el área de la salud.",
+        "pUI-2-name": "Atmporal",
+        "pUI-2-description": "Diseño de interfaz para una empresa de gestión de eventos.",
+        "pUI-3-name": "Medical Devices",
+        "pUI-3-description": "Diseño publicitario para un sitio web que ofrece servicios en el área de los dispositivos médicos."
+    },
+
+    "uxProyjects": {
+        "pUX-1-name": "SKILL CAPITAL",
+        "pUX-1-description": "Diseño y prototipado de una aplicación para encontrar un entrenador especial para entrenar en una disciplina marcial."
     }
+    
     
 }

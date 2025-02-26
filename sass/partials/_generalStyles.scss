@@ -91,7 +91,7 @@ li,
 label {
     font-size: clamp(0.8rem, 0.78rem + 0.1vw, 0.9rem);
     letter-spacing: .05rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0rem;
 }
 
 .smallTxt {
@@ -211,6 +211,35 @@ a.cta {
     }
 }
 
+p.bold {
+    font-weight: 600;
+}
+
+
+
+.content-languages {
+    button {
+        border: 0;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        box-shadow: var(--shadow);
+        background-color: var(--bgButton);
+        color: var(--iconButton);
+        transition: .3s ease;
+
+        &:hover {
+            background-color: var(--bgButtonActive);
+            color: var(--iconButtonActive);
+        }
+
+        &.btnActive {
+            background-color: var(--bgButtonActive);
+            color: var(--iconButtonActive);
+        }
+    }
+}
+
 button.cta {
     color: var(--link);
     background-color: var(--body);
@@ -244,6 +273,16 @@ button.cta {
     background-color: var(--container);
     box-shadow: var(--shadow);
     border-radius: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+        box-shadow: var(--shadowHover) !important;
+        -webkit-transform: scale(1.02, 1.02);
+        transform: scale(1.02, 1.02);
+        transition: .3s ease;
+    }
 }
 
 .sizeWidth {

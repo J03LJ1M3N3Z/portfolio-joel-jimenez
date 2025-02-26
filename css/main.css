@@ -68,16 +68,18 @@
   --link: #6B11F4;
   --linkHover: #0ACF83;
   --bgButton: #E8E8E8;
-  --bgButtonActive:#6B11F4;
-  --iconButton:#6B11F4;
+  --bgButtonActive: #6B11F4;
+  --iconButton: #6B11F4;
   --iconButtonActive: #FFF;
-  --shadow: -11px -11px 22px rgba(255,255,255),
-              11px 11px 22px rgba(128,128,128, .3);
+  --shadow: -11px -11px 22px rgba(255, 255, 255),
+      11px 11px 22px rgba(128, 128, 128, .3);
+  --shadowHover: -11px -11px 22px rgb(116, 77, 255, .2),
+      11px 11px 22px rgba(116, 77, 255, .2);
   --selectionBg: #6B11F4;
-  --selectionText:#fff;
-  --container:#E7E7E7;
-  --scrollBarTrack:#E7E7E7;
-  --scrollBarTumb:#6B11F4;
+  --selectionText: #fff;
+  --container: #E7E7E7;
+  --scrollBarTrack: #E7E7E7;
+  --scrollBarTumb: #6B11F4;
 }
 
 body.dark-theme {
@@ -87,16 +89,18 @@ body.dark-theme {
   --link: #33A9DC;
   --linkHover: #E7E7E7;
   --bgButton: #0C1113;
-  --bgButtonActive:#0ACF83;
-  --iconButton:#0ACF83;
+  --bgButtonActive: #0acf83;
+  --iconButton: #0ACF83;
   --iconButtonActive: #111A1D;
-  --shadow: -11px -11px 22px rgba(0,0,0),
-              11px 11px 22px rgba(16, 16, 16, 0.637);
+  --shadow: -11px -11px 22px rgba(0, 0, 0),
+      11px 11px 22px rgba(16, 16, 16, 0.637);
+  --shadowHover: -11px -11px 22px rgba(10, 207, 131, .2),
+      11px 11px 22px rgba(10, 207, 131, .2);
   --selectionBg: #0ACF83;
-  --selectionText:#000;
-  --container:#0e1518;
-  --scrollBarTrack:#0e1518;
-  --scrollBarTumb:#0ACF83;
+  --selectionText: #000;
+  --container: #0e1518;
+  --scrollBarTrack: #0e1518;
+  --scrollBarTumb: #0ACF83;
 }
 
 /*--------------RESPONSIVE----------*/
@@ -201,7 +205,7 @@ li,
 label {
   font-size: clamp(0.8rem, 0.78rem + 0.1vw, 0.9rem);
   letter-spacing: 0.05rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0rem;
 }
 
 .smallTxt {
@@ -306,6 +310,29 @@ a.cta:hover {
   color: var(--linkHover);
 }
 
+p.bold {
+  font-weight: 600;
+}
+
+.content-languages button {
+  border: 0;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  background-color: var(--bgButton);
+  color: var(--iconButton);
+  transition: 0.3s ease;
+}
+.content-languages button:hover {
+  background-color: var(--bgButtonActive);
+  color: var(--iconButtonActive);
+}
+.content-languages button.btnActive {
+  background-color: var(--bgButtonActive);
+  color: var(--iconButtonActive);
+}
+
 button.cta {
   color: var(--link);
   background-color: var(--body);
@@ -336,6 +363,14 @@ button.cta.btnActive::after {
   background-color: var(--container);
   box-shadow: var(--shadow);
   border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.shadow:hover {
+  box-shadow: var(--shadowHover) !important;
+  transform: scale(1.02, 1.02);
+  transition: 0.3s ease;
 }
 
 @media only screen and (min-width: 0px) {
